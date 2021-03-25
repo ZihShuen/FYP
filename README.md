@@ -35,6 +35,7 @@ At the end of the training loop,
     mean and standard deviation losses of the training&validation loss,accuracy and F1 scores
     
   these are the outputs are saved:
+  
     1. model state with the highest validation F1 score as "highest_f1.pt" as a checkpoint for test run
     2. model state with the smallest validation loss as "smallest_valid_loss.pt" as a checkpoint for test run
     3. training results per epoch is saved and compiled into a numpy array and saved into localized folders as .npy file
@@ -42,6 +43,7 @@ At the end of the training loop,
     5. Every parameter values is compiled and saved into localized folders as "data_results.txt"
     6. Every graph plotted is saved into their respective localized folders as .png file
     
-Two seperate test runs are then conducted with the model states with the best performance scores - highest validation F1 score and smallest validation loss. Similarly, the test results are then printed and saved in the same file that is collating the model output parameter values in "data_results.txt"
+Two seperate test runs are then conducted with the model states with the best performance scores of having the highest f1 score and smallest validation loss. 
+Similarly, the test results are then printed and saved and compiled into "data_results.txt"
  
 With all the values of the training, validation saved into a localized folder, we would be able to easily plot the combined graphs that we need to conclude our experiments and choose the best performing model for our dataset.
