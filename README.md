@@ -6,12 +6,12 @@ This code is run from Visual Studio Code and the output is printed as a ipynb fo
 
 To run this code on your selected environment, ensure the following is met:
   1. Respective libraries have been installed
-        --pytorch lightning, torch, numpy etc. libraries can be found on the top of each cell
-        --search for "import" through the code for quick search on all the libraries needed
+        #pytorch lightning, torch, numpy etc. libraries can be found on the top of each cell
+        #search for "import" through the code for quick search on all the libraries needed
         
   2. Model paths and image root folder path directory is linked to the correct path in the system
-        --image_root=r"[path]\Dataset_BUSI_with_GT" -> link to image folder "Dataset_BUSI_with_GT"
-        --model_path=r"[path]\FYP\[model]" -> link to every respective models
+        #image_root=r"[path]\Dataset_BUSI_with_GT" -> link to image folder "Dataset_BUSI_with_GT"
+        #model_path=r"[path]\FYP\[model]" -> link to every respective models
   
 # Summary Explanation of code:
 For the first few lines, we would be doing data importing, loading and splitting to a ratio of 80% of the data is used for training, 10% is used for validation and 10% is used for testing.
@@ -26,8 +26,8 @@ The Training loop consisted of running over 50 epoches and 15600 iterations.
 With every 10 iteration, a validation test is carried out.
 At the end of the training loop, 
   the following parameter values are calculated and produced:
-    --training & validation losses,accuracy,F1 score
-    --mean and standard deviation losses of the training&validation loss,accuracy and F1 scores
+    #training & validation losses,accuracy,F1 score
+    #mean and standard deviation losses of the training&validation loss,accuracy and F1 scores
     
   these are the outputs are saved:
     1. model state with the highest validation F1 score as "highest_f1.pt"
