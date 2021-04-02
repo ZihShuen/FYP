@@ -18,6 +18,11 @@ To run this code on your selected environment, ensure the following is met:
   3. File "Dataset_BUSI_with_GT" has no masks images and should be downloaded
   
 # Summary Explanation of code:
+There are two python folders- MUS-trainvalidtest.py, MUS-plot.py 
+MUS-trainvalidtest is the code that builds the CNN model and saves the all the relevant output values in a local folder
+MUS-plot is the code that extracts the output values to plot the relevant figures for analysis report.
+
+MUS-trainvalidtest:
 For the first few lines, we would be doing data importing, loading and splitting to a ratio of 80% of the data is used for training, 10% is used for validation and 10% is used for testing.
 
 Then, the classification and importing of convolution, layering and blocks obtained for the models from model zoo documentation in pytorch.org.
@@ -47,3 +52,4 @@ Two seperate test runs are then conducted with the model states with the best pe
 Similarly, the test results are then printed and saved and compiled into "data_results.txt"
  
 With all the values of the training, validation saved into a localized folder, we would be able to easily plot the combined graphs that we need to conclude our experiments and choose the best performing model for our dataset.
+
